@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" type="x-icon" href="C:\Users\santh\HTML\images\logo2.jpg">
+    </head>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #789ee0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #f3efe5;
+      width: 750px;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .left {
+      width: 50%;
+    }
+
+    .logo {
+      font-size: 24px;
+      margin-bottom: 20px;
+      
+    }
+
+
+    .logo span:last-child {
+      color: peru;
+      font-weight: bold;
+      
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-btn {
+      width: 100%;
+      background-color: #2f3e46;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .login-btn:hover {
+      background-color: #354f52;
+    }
+
+    .forgot {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .social-login {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .social-login i {
+      margin: 0 8px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .right {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .signup {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-size: 14px;
+    }
+
+    .signup button {
+      background-color: #2f3e46;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .signup button:hover {
+      background-color: #354f52;
+    }
+
+    .illustration {
+      width: 250px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="logo"><span>Digital libary </span></div>
+      <h2>Log in</h2>
+      <form>
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" placeholder="Enter your username or email address" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <button type="submit" class="login-btn">Log In</button>
+      </form>
+      <div class="forgot">Forgot Password?</div>
+      <!-- <div class="social-login">
+        Log In with
+        <i>G</i> <i>f</i> <i>📷</i> <i>in</i>
+      </div> -->
+    </div>
+
+    <div class="right">
+      <img src="C:\Users\santh\HTML\images\lapBooks.jpg" alt="Books Illustration" class="illustration">
+    </div>
+
+    <div class="signup">
+      Don’t have an account?
+      <button>Sign Up</button>
+    </div>
+  </div>
+</body>
+</html>
