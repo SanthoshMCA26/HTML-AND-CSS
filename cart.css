@@ -1,0 +1,111 @@
+body{
+    background-color: rgb(237, 221, 223);
+}
+
+.container {
+  width: 18%;
+  margin:50px auto;
+  padding: 40px;
+  background-color: rgb(230, 205, 169);
+  border-radius: 10px;
+   
+}
+
+#UserName {
+  width: 88%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  
+  
+  
+}
+
+#userEmail {
+  width: 88%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+#password {
+  width: 88%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+#Mobile {
+  width: 88%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+#address {
+  width: 88%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+.btn{
+    padding: 5px;
+    width: 25%;
+    border-radius: 12px;
+    margin: 15px 15px 0px 75px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: lightblue;
+
+}
+.loginContainer{
+  width: 40%;
+  margin:auto;
+  padding: 40px;
+  background-color: rgb(230, 205, 169);
+  border-radius: 10px;
+  height: 100%;
+  position: relative;
+
+}
+#user{
+  width: 88%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+
+}
+#password{
+  width: 88%;
+  padding:10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+
+}
+.login{
+    padding: 5px;
+    width: 25%;
+    border-radius: 12px;
+    margin: 15px 15px 0px 170px;
+    cursor: pointer;
+
+}
+.login:hover{
+    background-color: rgb(72, 137, 227);
+}
+
+#showPassword{
+    display: flex;
+    align-items: center;
+    gap: 5px;              
+    margin-left: 10px;
+}
+label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+
