@@ -17,7 +17,7 @@ h1{
   
 }
 
-#UserName, #last, #email, #password, #mobile,#gender   {
+#UserName, #last, #email, #pass, #mobile,#gender   {
   width: 100%;
   padding: 10px;
   margin: 5px 5px 5px -22px;
@@ -56,7 +56,7 @@ label {
   box-sizing: border-box;
   overflow: hidden; /* keeps content inside when zooming */
 }
-#user , #pass{
+#user , #password{
   width: 88%;
   padding: 10px;
   margin: 5px;
@@ -82,6 +82,10 @@ label {
     background-color: rgb(72, 137, 227);
 }
 
+.signup{
+  padding: 25%;
+}
+
 #showPassword{
     display: flex;
     align-items: center;
@@ -94,5 +98,3 @@ label {
   gap: 5px;
   margin-top: 10px;
 }
-
-

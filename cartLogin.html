@@ -5,24 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="cart.css">
+    <link rel="icon" type="image/x-icon" href="cartLogo.jpg">
     
 
 </head>
 <body>
     
     <div class="loginContainer">
+        <!-- <a href="about.html" class="signup">Don't have an account?"Singn up"</a> -->
         <section>
             <h1 style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" >Login To SwiftCart</h1>
-            <input type="text"  id="user" placeholder="Enter your mail id" required><br>
-            <input type="password" id="pass" placeholder="Enter your password" required><br>
+            <input type="text"  id="user" placeholder="Enter your mail id" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
             
             <label>
                 <input type="checkbox" id="showPassword" 
                 onchange="document.getElementById('password').type = this.checked ? 'text' : 'password'">Show Password
             </label>
+            <form action="#" onsubmit="return false;">
+
                            
             <button class="login">Log In</button>
-        </section>
+            
+        </section>        
+        
+    </div>
+    <div class="outsite">
+             
+            <!-- <a href="about.html" class="signup">Don't have an account?"Singn up"</a> -->
+
     </div>
     
 </body>
