@@ -4,7 +4,7 @@ body{
 
 .container {
   width: 18%;
-  margin: auto;
+  margin:  30px auto;
   padding: 40px;
   background-color: white;
   border: solid; 
@@ -13,6 +13,7 @@ body{
 h1{
   margin: -20px 1px 20px 1px;
   padding: 0%;
+  
   
 }
 
