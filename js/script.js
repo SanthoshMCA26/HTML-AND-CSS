@@ -1,30 +1,59 @@
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // stop form from refreshing
+document.addEventListener("DOMContentLoaded", () => {
+  function loadBooks() {
+    const books = JSON.parse(localStorage.getItem("books")) || [];
+    const tbody = document.querySelector("#bookTable tbody");
+    tbody.innerHTML = "";
 
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-      const message = document.getElementById("message");
-
-      // Example check (replace with your real validation logic)
-      if (email === "admin@gmail.com" && password === "1234") {
-        message.style.color = "green";
-        message.textContent = "Login successful! Redirecting...";
-        setTimeout(() => {
-          window.location.href = "Dashboard.html"; // go to dashboard page
-        }, 1500);
-      } else {
-        message.style.color = "red";
-        message.textContent = "Invalid username or password!";
-        }
+    books.forEach(book => {
+      const row = `
+        <tr>
+          <td>${book.id}</td>
+          <td>${book.name}</td>
+          <td>${book.author}</td>
+          <td>${book.publisher}</td>
+          <td>${book.year}</td>
+          <td>${book.quantity}</td>
+        </tr>
+      `;
+      tbody.insertAdjacentHTML("beforeend", row);
     });
+  }
 
-    //for sign submit button
+  document.getElementById("bookForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-    document.getElementById("registerForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // prevent refresh
+    const id = document.getElementById("bookId").value.trim();
+    const name = document.getElementById("bookName").value.trim();
+    const author = document.getElementById("author").value.trim();
+    const publisher = document.getElementById("publisher").value.trim();
+    const year = document.getElementById("year").value.trim();
+    const quantity = parseInt(document.getElementById("quantity").value);
 
-      // ✅ After signup, redirect to login page
-      window.location.href = "login.html";
-    });
+    if (!id || !name || !author || !publisher || quantity <= 0) {
+      alert("Please fill all required fields correctly!");
+      return;
+    }
 
+    const books = JSON.parse(localStorage.getItem("books")) || [];
 
+    if (books.some(b => b.id === id)) {
+      alert("Book ID already exists!");
+      return;
+    }
+
+    books.push({ id, name, author, publisher, year, quantity });
+    localStorage.setItem("books", JSON.stringify(books));
+
+    alert("Book added successfully!");
+    this.reset();
+    loadBooks();
+  });
+
+  const addBtn = document.getElementById("addBookBtn");
+  addBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    document.getElementById("bookId").focus();
+  });
+
+  loadBooks();
+});
