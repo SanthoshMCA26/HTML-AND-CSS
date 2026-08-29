@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-    <a class="navbar-brand fw-bold" href="#"><i class="fa-solid fa-book-open"></i> Digital Library</a>
+    <a class="navbar-brand fw-bold" href="Dashboard.html"><i class="fa-solid fa-book-open"></i> Digital Library</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
@@ -53,14 +53,26 @@
                     <th>ID</th>
                     <th>Name</th>
                     <th>Author</th>
-                    <th>Category</th>
+                    <th>category</th>
                     <th>Quantity</th>
                     <th>Action</th>
                 </tr>
-            </thead>
-            <tbody id="bookTable"></tbody>
-
+                </thead>
+                    <tbody id="bookTable">
+                        <tr>
+                            <td>1</td>
+                            <td>Life of Pi</td>
+                            <td>Yann Martel</td>
+                            <td>adventure, drama, and philosophical fiction</td>
+                            <td>1</td>
+                            <td>
+                                <button class="btn btn-primary me-1" onclick="editBook(1)">Edit</button>
+                                <button class="btn btn-danger" onclick="deleteBooks(1)">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
         </table>
+
          <h3 class="fw-bold mt-4">Add Book</h3>
         <p class="text-muted">Book ID must be unique, name is mandatory, quantity must be greater than zero.</p>
         <form class="form-box " id="bookForm">
@@ -78,8 +90,8 @@
                     <input type="text" id="author" class="form-control " required>
                 </div>
                 <div class="col-md-4">
-                    <label class="form-label">publisher</label>
-                    <input type="text" id="publisher" class="form-control " required>
+                    <label class="form-label">Category</label>
+                    <input type="text" id="Category" class="form-control " required>
                 </div>
                 <div class="col-md-4">
                     <label class="form-label">publisher year</label>
