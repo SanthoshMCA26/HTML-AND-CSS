@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   function loadBooks() {
     const books = JSON.parse(localStorage.getItem("books")) || [];
     const tbody = document.getElementById("bookTable");
-    tbody.innerHTML = "";
+    tbody.innerHTML = ""; //for prevent duplicate rows
 
-    books.forEach(book => {
+    books.forEach(book => { //for every book create table
       const row = `
         <tr>
           <td>${book.id}</td>
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </td>
         </tr>
       `;
-      tbody.insertAdjacentHTML("beforeend", row);
+      tbody.insertAdjacentHTML("beforeend", row);// Adds the new row into the table body at the end.
     });
   }
 
