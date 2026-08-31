@@ -1,0 +1,25 @@
+{
+  "name": "html-and-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanthoshMCA26/HTML-AND-CSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SanthoshMCA26/HTML-AND-CSS/issues"
+  },
+  "homepage": "https://github.com/SanthoshMCA26/HTML-AND-CSS#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "node-schedule": "^2.1.1"
+  }
+}
