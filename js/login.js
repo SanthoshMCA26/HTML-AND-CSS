@@ -1,20 +1,21 @@
-﻿// login script file
-document.getElementById("loginForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // stop form from refreshing
+﻿document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-      const message = document.getElementById("message");
+  const email = document.getElementById("loginEmail").value.trim();
+  const password = document.getElementById("loginPassword").value.trim();
+  const message = document.getElementById("message");
 
-      // Example check (replace with your real validation logic)
-      if (email === "admin@gmail.com" && password === "1234") {
-        message.style.color = "green";
-        message.textContent = "Login successful! Redirecting...";
-        setTimeout(() => {
-          window.location.href = "Dashboard.html"; // go to dashboard page
-        }, 1500);
-      } else {
-        message.style.color = "red";
-        message.textContent = "Invalid username or password!";
-        }
-    });
+  const storedEmail = localStorage.getItem("userEmail");
+  const storedPassword = localStorage.getItem("userPassword");
+
+  if (email === storedEmail && password === storedPassword) {
+    message.style.color = "green";
+    message.textContent = "Login successful! Redirecting...";
+    setTimeout(() => {
+      window.location.href = "Dashboard.html";
+    }, 1500);
+  } else {
+    message.style.color = "red";
+    message.textContent = "Invalid email or password!";
+  }
+});
