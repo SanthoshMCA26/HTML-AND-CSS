@@ -11,10 +11,9 @@
 <body class="bg-light">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3 fixed-top">
     <a class="navbar-brand fw-bold" href="#"><i class="fa-solid fa-book-open"></i> Digital Library</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span>
-    </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
@@ -29,10 +28,10 @@
   <div class="container-fluid">
     <div class="row">
       <!-- Sidebar -->
-      <aside class="col-md-2 bg-warning  vh-100 p-3">
+      <aside class="col-md-2 bg-warning  height-100 p-3">
         <h5 class="fw-bold mb-3">Admin Panel</h5>
         <ul class="list-unstyled">
-          <li class="mb-4"><i class="fa-solid fa-house me-2"></i>Dashboard</li>
+          <li class="mb-4"><i class="fa-solid fa-house me-2 mt-3"></i>Dashboard</li>
           <li class="mb-4"><i class="fa-solid fa-book me-3"></i>Books</li>
           <li class="mb-4"><i class="fa-solid fa-users me-2"></i>Members</li>
           <li class="mb-4"><i class="fa-solid fa-arrow-up me-3"></i>Issue Book</li>
@@ -46,7 +45,7 @@
       <!-- Main Content -->
       <main class="col-md-10 p-4">
         <header class="mb-4">
-          <h2 class="fw-bold">Dashboard</h2>
+          <h2 class="fw-bold pt-5">Dashboard </h2>
           <p>Welcome back, Admin! Here’s an overview of your library.</p>
         </header>
 
@@ -62,36 +61,36 @@
         <!-- Stats Cards -->
         <div class="row g-3 my-3">
           <div class="col-md-3">
-            <div class="card border-success text-center">
+            <div class="card border-success text-center bg-primary text-white border border-dark border-3 rounded-3 shadow-lg">
               <div class="card-body">
-                <h5 class="text-success fw-bold">Local Storage</h5>
+                <h5 class="text-success fw-bold text-white">Local Storage</h5>
                 <p class="fs-4 mb-0">3</p>
                 <small>Eat message</small>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card border-primary text-center">
+            <div class="card border-primary text-center bg-success text-white border border-dark border-3 rounded-3 shadow-lg">
               <div class="card-body">
-                <h5 class="text-primary fw-bold">Total Books</h5>
+                <h5 class="text-primary fw-bold text-white">Total Books</h5>
                 <p class="fs-4 mb-0">3</p>
                 <small>Total Books</small>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card border-warning text-center">
+            <div class="card border-warning text-center bg-warning text-white border border-dark border-3 rounded-3 shadow-lg">
               <div class="card-body">
-                <h5 class="text-warning fw-bold">Add Books</h5>
+                <h5 class="text-warning fw-bold text-white">Add Books</h5>
                 <p class="fs-4 mb-0">3</p>
                 <small>Add books</small>
               </div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="card border-danger text-center">
+            <div class="card border-danger text-center bg-danger text-white  border border-dark border-3 rounded-3 shadow-lg">
               <div class="card-body">
-                <h5 class="text-danger fw-bold">Validate Input</h5>
+                <h5 class="text-danger fw-bold text-white">Validate Input</h5>
                 <p class="fs-4 mb-0">3</p>
                 <small>Validate input</small>
               </div>
@@ -119,8 +118,8 @@
               <div class="card-body">
                 <h5 class="fw-bold mb-3">Issued vs Returned Books</h5>
                 <div class="mb-5">
-                  <p>Issued Books: 32 (27%)</p>
-                  <p>Returned Books: 88 (73%)</p>
+                  <p>Issued Books: 3 (30%)</p>
+                  <p>Returned Books: 0 (0%)</p>
                 </div>
               </div>
             </div>
@@ -133,6 +132,6 @@
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- for navbar expand -->
 
+
 </body>
 </html>
-

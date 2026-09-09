@@ -1,11 +1,11 @@
 body {
   margin: 0px;
   padding: 0;
-  background-image: url("../images/welcome.jpg"); /* உங்கள் image path */
-  background-size: cover;        /* screen முழுவதும் stretch ஆகும் */
-  background-position: center;   /* image center‑இல் align ஆகும் */
-  background-repeat: no-repeat;  /* repeat ஆகாது */
-  height: 100vh;                 /* viewport height முழுவதும் */
+  background-image: url("../images/welcome.jpg"); 
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  height: 100vh;                
 }
 .content{
     width: fit-content;
